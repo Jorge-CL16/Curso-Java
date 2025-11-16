@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Condicional_if {
+public class Condicional_if_and {
     public static void main(String[] args){
 
         String nombre;
