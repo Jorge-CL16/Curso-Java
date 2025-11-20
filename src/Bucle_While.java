@@ -17,7 +17,7 @@ public class Bucle_While {
 
         //tabla de multiplicar
 
-        Scanner entrada = new Scanner(System.in);
+        /*Scanner entrada = new Scanner(System.in);
 
         int tabla = 0;
         int i = 1;
@@ -30,9 +30,30 @@ public class Bucle_While {
             resultado = tabla * i;
             System.out.println(tabla + "x" + i + "=" + resultado );
             i++;
+        }*/
+
+        Scanner entrada = new Scanner(System.in);
+
+        final String username = "Jorge";
+        final String password = "abc123";
+        boolean acceso = false;
+
+        while(!acceso){
+
+            System.out.println("Ingrese su usuario");
+            String usuario = entrada.nextLine();
+
+            System.out.println("Ingrese su contraseña");
+            String clave = entrada.nextLine();
+
+            if (usuario.equals(username) && password.equals(clave)){
+                System.out.println("Accesos correcto!");
+                acceso = true;
+            } else {
+                System.out.println("ERROR: USUARIO o CONTRASEÑA incorrectos" + "\n" + "Intente de nuevo");
+            }
+
         }
-
-
-
+        System.out.println("Fin del bucle");
     }
 }
