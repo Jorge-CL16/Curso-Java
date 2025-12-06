@@ -1,3 +1,5 @@
+package Arreglos;
+
 public class Arreglos_entero {
     public static void main(String[] args) {
 
